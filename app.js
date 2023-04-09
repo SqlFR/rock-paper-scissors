@@ -4,9 +4,8 @@ function getComputerChoice() {
     return computerChoice.toLowerCase();
 }
 
-function getPlayerChoice() {
-    const playerChoice = prompt('Choissisez : Rock, Paper or Scissors : ')
-    return playerChoice.toLowerCase();
+function getPlayerChoice() {     
+    return prompt('Choissisez : Rock, Paper or Scissors : ').toLowerCase();
 }
 
 function capitalizeString(string) {
