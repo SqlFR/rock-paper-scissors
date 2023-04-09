@@ -34,7 +34,7 @@ function playRound(computerChoice, playerChoice) {
 
 function game() {
     while (currentGame < 5) {
-        console.log(`Partie n° ${currentGame + 1}.`)
+        console.log(`Partie n° ${currentGame + 1}.`);
         console.log(playRound(getComputerChoice(), getPlayerChoice()),
                     `\nLes scores : ${computerScore} pour l'ordinateur et ${playerScore} pour vous.`);
         currentGame++;
