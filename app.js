@@ -40,9 +40,9 @@ function game() {
         currentGame++;
     }
     if (playerScore > computerScore) {
-        console.log(`Bravo vous l'emporté avec ${playerScore} contre ${computerScore} pour l'ordinateur.`)
+        console.log(`Bravo vous l'emporté avec ${playerScore} contre ${computerScore} pour l'ordinateur.`);
     } else {
-        console.log(`Perdu... ${computerScore} pour l'ordinateur et ${playerScore} pour vous.`)
+        console.log(`Perdu... ${computerScore} pour l'ordinateur et ${playerScore} pour vous.`);
     }
 }
 
