@@ -12,7 +12,7 @@ function getPlayerChoice() {
 }
 
 function capitalizeString(string) {
-    return string[0].toUpperCase() + string.slice(1) // capitalize first letter
+    return string[0].toUpperCase() + string.slice(1); // capitalize first letter
 }
 
 function playRound(computerChoice, playerChoice) {
