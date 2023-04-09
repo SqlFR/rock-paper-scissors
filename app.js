@@ -4,21 +4,18 @@ let currentGame = 0;
 
 function getComputerChoice() {
     const differentChoice = ['Rock', 'Paper', 'Scissors'];
-    const computerChoice = differentChoice[Math.floor(Math.random(1) * 3)];
-    return computerChoice.toLowerCase();
+    return differentChoice[Math.floor(Math.random(1) * 3)].toLowerCase(); // return choice computer
 }
 
 function getPlayerChoice() {     
-    return prompt('Choissisez : Rock, Paper or Scissors : ').toLowerCase();
+    return prompt('Choissisez : Rock, Paper or Scissors : ').toLowerCase(); // return choice player
 }
 
 function capitalizeString(string) {
-    return string[0].toUpperCase() + string.slice(1)
+    return string[0].toUpperCase() + string.slice(1) // capitalize first letter
 }
 
 function playRound(computerChoice, playerChoice) {
-    // console.log('Computer choice : ' + computerChoice)
-    // console.log('Your choice : ' + playerChoice)
     if ( computerChoice === playerChoice) {
         computerScore++;
         playerScore++;
@@ -37,9 +34,9 @@ function playRound(computerChoice, playerChoice) {
 
 function game() {
     while (currentGame < 5) {
-        console.log(`Partie n° ${currentGame + 1}`)
-        console.log(playRound(getComputerChoice(), getPlayerChoice()));
-        console.log(`Les scores : ${computerScore} pour l'ordinateur et ${playerScore} pour vous.`)
+        console.log(`Partie n° ${currentGame + 1}.`)
+        console.log(playRound(getComputerChoice(), getPlayerChoice()),
+                    `\nLes scores : ${computerScore} pour l'ordinateur et ${playerScore} pour vous.`);
         currentGame++;
     }
     if (playerScore > computerScore) {
