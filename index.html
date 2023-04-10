@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Passage sur la branche UI.</h1>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <div class="scoreBoard">
+            <div class="gameInfos">
+                <div id="info">Choose your weapon !</div>
+                <div id="result">First to score 5 win the game.</div>
+            </div>
+            <div class="choices">
+                <div id="choicePlayer">❌</div>
+                <div id="choiceComputer">❌</div>
+            </div>
+            <div class="scoreInfo">
+                <div id="scorePlayer">Player : 0</div>
+                <div id="scoreComputer">Computer : 0</div>
+            </div>
+        </div>
+        <div class="containButton">
+            <button value="rock" class="btnChoice" id="buttonRock">✊</button>
+            <button value="paper" class="btnChoice" id="buttonPaper">✋</button>
+            <button value="scissors" class="btnChoice" id="buttonScissors">✌️</button>
+        </div>
+        <div id="resultFinal"></div>
+    </main>
+    <footer>
+        <span>Copyright © 2023 SqlFR</span>
+    </footer>
+    
 </body>
 </html>
