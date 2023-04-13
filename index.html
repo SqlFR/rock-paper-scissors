@@ -15,16 +15,16 @@
     <main>
         <div class="scoreBoard">
             <div class="gameInfos">
-                <div id="info">Choose your weapon !</div>
-                <div id="result">First to score 5 win the game.</div>
+                <div id="displayInfo">Choose your weapon !</div>
+                <div id="displayResult">First to score 5 win the game.</div>
             </div>
             <div class="choices">
-                <div id="choicePlayer">❌</div>
-                <div id="choiceComputer">❌</div>
+                <div id="displayPlayerChoice">❌</div>
+                <div id="displayComputerChoice">❌</div>
             </div>
             <div class="scoreInfo">
-                <div id="scorePlayer">Player : 0</div>
-                <div id="scoreComputer">Computer : 0</div>
+                <div id="displayPlayerScore">Player : 0</div>
+                <div id="displayComputerScore">Computer : 0</div>
             </div>
         </div>
         <div class="containButton">
@@ -32,7 +32,10 @@
             <button value="paper" class="btnChoice" id="buttonPaper">✋</button>
             <button value="scissors" class="btnChoice" id="buttonScissors">✌️</button>
         </div>
-        <div id="resultFinal"></div>
+        <div id="resultFinal">
+            <p class="message">Test</p>
+            <button class="btnRestart">Try again...</button>
+        </div>
     </main>
     <footer>
         <span>Copyright © 2023 SqlFR</span>

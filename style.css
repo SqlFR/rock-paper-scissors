@@ -21,10 +21,10 @@ header {
 }
 
 main {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-rows: 2fr 1fr;
-    /* padding: 4em; */
     justify-content: center;
     padding-bottom: 60px;
 }
@@ -96,4 +96,36 @@ footer {
 
 .btnChoice:hover {
     background-color: #828ac7;
+}
+
+#resultFinal {
+    display: none;
+}
+
+.popUp {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 340px;
+    height: 180px;
+    margin-top: 1rem;
+    background-color: #828ac7;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message {
+    font-size: 28px;    
+}
+
+.btnRestart {
+    height: 60px;
+    width: 140px;
+    font-size: 24px;
+    background-color: #5C63A7;
+    color: #F5F5F5;
+    border-radius: 10px;
 }
