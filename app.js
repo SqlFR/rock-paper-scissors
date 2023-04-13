@@ -67,12 +67,9 @@ function updateScoresMessage(playerChoice, computerChoice, winner) {
     }
 }
 
-function game() {
-    while (currentGame < 5) {
-        console.log(`Partie n° ${currentGame + 1}.`);
-        console.log(playRound(getComputerChoice(), getPlayerChoice()),
-                    `\nLes scores : ${computerScore} pour l'ordinateur et ${playerScore} pour vous.`);
-        currentGame++;
+function endGame(player) {
+    if (player === 'player') {
+        message.textContent = "Congrats you win !"
     }
     if (player === 'computer') {
         message.textContent = "Too bad, you loose..."
@@ -131,7 +128,6 @@ displayComputerScore.textContent = 'Computer : 0'
 
 buttons.forEach(button => button.addEventListener('click', game));
 buttonRestart.addEventListener('click', restartGame);
-
 
 
 
